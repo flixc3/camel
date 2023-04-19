@@ -181,7 +181,7 @@ class CodeTaskPromptGenerator:
 
     def __init__(
         self,
-        num_tasks: int = 50,
+        num_tasks: int = 500,
     ) -> None:
 
         self.generate_tasks_prompt = PromptTemplate.get_generate_tasks_prompt(
