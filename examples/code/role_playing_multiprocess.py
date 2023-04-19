@@ -40,7 +40,7 @@ def init_chat(
 def generate_data(language_idx: int, language_name: str, domain_idx: int,
                   domain_name: str, task_idx: int, task_prompt: str) -> None:
 
-    max_num_messages = 40
+    max_num_messages = 400
 
     # Remove number from task prompt
     original_task_prompt = task_prompt.replace(f"{task_idx+1}. ", "")
