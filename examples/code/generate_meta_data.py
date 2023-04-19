@@ -5,7 +5,7 @@ from camel.messages import AssistantSystemMessage, UserChatMessage
 from camel.prompts import PROMPTS_DIR
 
 
-def generate_meta_data(meta_data: str, num: int = 50):
+def generate_meta_data(meta_data: str, num: int = 500):
     prompt_path = os.path.join(
         PROMPTS_DIR,
         f"code/generate_{meta_data}.txt",
