@@ -12,7 +12,7 @@ def generate_data(assistant_idx: int, assistant_role_name: str, user_idx: int,
                   user_role_name: str, task_idx: int, task_prompt: str,
                   verbose: bool = False) -> None:
 
-    max_num_messages = 40
+    max_num_messages = 400
 
     original_task_prompt = task_prompt.replace(f"{task_idx+1}. ", "")
 
