@@ -5,7 +5,7 @@ from camel.messages import AssistantSystemMessage, UserChatMessage
 from camel.prompts import PROMPTS_DIR
 
 
-def main(role_type: str = "user", num_roles: int = 50):
+def main(role_type: str = "user", num_roles: int = 500):
     prompt_path = os.path.join(PROMPTS_DIR,
                                f"ai_society/generate_{role_type}.txt")
     with open(prompt_path, "r") as f:
@@ -27,5 +27,5 @@ def main(role_type: str = "user", num_roles: int = 50):
 
 
 if __name__ == "__main__":
-    main("user", 50)
-    main("assistant", 50)
+    main("user", 500)
+    main("assistant", 500)
