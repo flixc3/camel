@@ -11,7 +11,7 @@ from camel.typing import RoleType, TaskType
 
 
 def generate_tasks(role_names: str, task_generator_prompt: str,
-                   start_token: str = "1.", num_tasks: int = 100) -> None:
+                   start_token: str = "1.", num_tasks: int = 10) -> None:
     sys_msg_generator = SystemMessageGenerator(task_type=TaskType.DEFAULT)
 
     assistant_sys_msg = sys_msg_generator.from_dict(
